@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com" />
 
-  <default revision="refs/tags/android-m-preview-1"
+  <default revision="refs/tags/android-m-preview"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
