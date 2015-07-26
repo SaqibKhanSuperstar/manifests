@@ -5,10 +5,14 @@
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com" />
 
-  <default revision="refs/tags/android-5.1.1_r8"
+  <default revision="refs/tags/android-m-preview-1"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
+           
+<project path="build" name="platform/build" groups="pdk,tradefed" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
